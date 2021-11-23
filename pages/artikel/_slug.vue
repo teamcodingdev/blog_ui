@@ -63,7 +63,7 @@ export default {
     }
   },
   async fetch () {
-    this.artikel = await this.$axios.$get(`artikel/artikel/${this.$route.params.slug}/`)
+    this.artikel = await this.$axios.$get(`artikel/artikel/${this.$route.params.slug}/`, { params: { review: this.$route.query.review } })
     // console.log(artikel)
   }
 }
