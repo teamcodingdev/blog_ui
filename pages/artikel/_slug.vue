@@ -45,7 +45,7 @@
             <div class="mt-6 filter grayscale">
               <img class="w-full" :src="artikel.cover_image_url" alt="">
             </div>
-            <div class="mt-12 text-lg text-gray-900 leading-9 content-blog" v-html="artikel.content">
+            <div id="artikel" class="mt-12 text-lg text-gray-900 leading-9" v-html="artikel.content">
               <!-- Content -->
             </div>
           </div>

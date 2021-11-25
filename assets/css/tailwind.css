@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-code {
+#artikel code {
     @apply  bg-green-200 bg-opacity-70 rounded-md p-1 text-sm
 }
-pre {
+#artikel pre {
     @apply py-2 px-4 bg-gray-200 bg-opacity-70 font-mono rounded-md mt-6 text-sm overflow-x-auto
+}
+#artikel a {
+    @apply text-blue-600 hover:text-blue-400 transition-all ease-in-out
+}
+#artikel h2,h3,h4 {
+    @apply mb-5 font-medium
+}
+#artikel h2 {
+    @apply text-3xl
+}
+#artikel h3 {
+    @apply text-2xl
+}
+#artikel ul {
+    @apply list-disc
+}
+#artikel ol {
+  @apply list-decimal
 }
