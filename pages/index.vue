@@ -15,7 +15,7 @@
           <div v-if="artikel_obj">
             <div v-for="i in artikel_obj.results" :key="i.id" class="p-6 bg-white shadow-sm mb-20">
               <div class="text-center text-3xl text-gray-700 flex justify-center">
-                <NuxtLink :to="{name: 'artikel-slug', params: {slug: i.slug}}" href="#" class="max-w-xl w-full hover:text-green-500">
+                <NuxtLink :to="{name: 'artikel-slug', params: {slug: i.slug}}" href="#" class="max-w-xl w-full hover:text-green-500 transition-all ease-in-out">
                   {{ i.title }}
                 </NuxtLink>
               </div>
