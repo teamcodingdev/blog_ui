@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    build: .
+    restart: always
+    port: 80:5000
+    volumes:
+      - .:/usr/src/nuxt-app/
+    # env_file:
+    #   - ./.env
+    networks:
+      - webblog
+
+volumes:
+  static_volume:
+  media_volume:
+
+networks:
+  webblog:
+    external: true
